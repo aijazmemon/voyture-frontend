@@ -1,0 +1,249 @@
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Container */
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff  ;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #FFC09F;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #79ADDC;
+}
+
+#logout-btn{
+  color: #fff;
+  background-color: rgb(110, 16, 16);
+}
+
+#logout-btn:hover{
+  background-color: #c53d3d;
+}
+
+/* Main Content */
+.main-content {
+  padding: 40px 20px;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.button-primary {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+  background-color: #0056b3;
+}
+
+.button-secondary {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #007bff;
+  background-color: transparent;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-secondary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Cards */
+.card {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Typography */
+h1, h2, h3 {
+  color: #333;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+
+.logo {
+  height: 75px; /* Adjust size as needed */
+  margin-right: 20px;
+}
+
+
+.welcome-message {
+  font-size: 2em;
+  color: #97763e;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-inline {
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+}
+
+
+/* Sliding Banner Container */
+.sliding-banner {
+  width: 50%; /* Adjust based on layout */
+  height: auto;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-left: 20px; /* Space between text and banner */
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  transition: opacity 1s ease-in-out;
+}
+
+.welcome-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 45%; /* Adjust width based on your layout */
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+}
+
+.welcome-message {
+  font-size: 2em;
+  color: #8f8f8f;
+}
+
+.tagline {
+  font-size: 1.2em;
+  color: #8f8f8f;
+  font-style: italic;
+}
+
+
+.experiences-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.experience-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.experience-card {
+  flex: 1 1 200px; /* Allows cards to wrap and maintain a responsive width */
+  max-width: 200px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.experience-image-homepage {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.experience-title {
+  font-size: 1.2em;
+  color: #333;
+  margin: 10px 0;
+}
+
+.experience-description {
+  font-size: 0.9em;
+  color: #666;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.see-more-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #79ADDC;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.see-more-button:hover {
+  background-color: #0056b3;
+}

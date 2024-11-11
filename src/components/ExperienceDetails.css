@@ -1,0 +1,128 @@
+/* Main container for ExperienceDetails component */
+.experience-details-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Experience title styling */
+.experience-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+/* Description and details styling */
+.experience-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.experience-location {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #777;
+}
+
+/* Price styling */
+.experience-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #4CAF50;
+    margin-bottom: 2rem;
+}
+
+/* Button styling */
+.book-btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-btn:disabled {
+    background-color: #bbb;
+    cursor: not-allowed;
+}
+
+.book-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Loading and error message styling */
+.loading-message,
+.error-message,
+.no-experience-message {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.loading-message {
+    color: #007bff;
+}
+
+.error-message {
+    color: #ff3333;
+}
+
+.no-experience-message {
+    color: #888;
+}
+
+
+/* Gallery styling */
+.image-gallery {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.experience-image {
+    width: 100%;
+    max-width: calc(33.333% - 10px); /* 3 images per row */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.experience-image:hover {
+    transform: scale(1.05);
+}
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .experience-title {
+        font-size: 2rem;
+    }
+
+    .experience-description,
+    .experience-details {
+        font-size: 1rem;
+    }
+
+    .experience-price {
+        font-size: 1.25rem;
+    }
+
+    .book-button {
+        width: 100%;
+        padding: 1rem;
+    }
+}

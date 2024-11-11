@@ -1,0 +1,104 @@
+/* Profile Component Styles */
+
+.profile-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff; /* Changed to white for consistency */
+}
+
+.profile-container {
+    width: 90%;
+    max-width: 900px; /* Increased max-width for better layout */
+    padding: 20px;
+    background-color: #ffffff; /* White background for profile */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: relative; /* For positioning the back button */
+}
+
+.back-button {
+    background-color: #ff8f53; /* Orange background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for button */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.back-button:hover {
+    background-color: #FFC09F; /* Lighter orange on hover */
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Space between details and selfie */
+}
+
+.profile-details {
+    flex: 2; /* Take up twice the space compared to selfie */
+    font-size: 18px; /* Font size for details */
+    color: #555; /* Slightly lighter color for details */
+}
+
+.profile-details p {
+    margin: 10px 0; /* Space between paragraphs */
+}
+
+.profile-selfie-container {
+    flex: 1; /* Take up remaining space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-selfie {
+    width: 200px; /* Increased size for better visibility */
+    height: 200px; /* Increased size for better visibility */
+    border-radius: 50%; /* Make it a circle */
+    object-fit: cover; /* Cover to maintain aspect ratio */
+    border: 2px solid #c9c9c9; /* Grey border around the selfie */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Loading and error message styling */
+.loading-message,
+.error-message,
+.no-experience-message {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.loading-message {
+    color: #007bff;
+}
+
+.error-message {
+    color: #ff3333;
+}
+
+.no-experience-message {
+    color: #888;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .profile-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-details {
+        text-align: center;
+    }
+
+    .profile-selfie {
+        width: 150px;
+        height: 150px;
+    }
+}

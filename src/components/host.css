@@ -1,0 +1,137 @@
+/* Style for the container */
+.post-experience-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px; /* Increased padding for better spacing */
+  text-align: center;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 10px; /* Rounded corners for the container */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Style for input fields and text area */
+.post-experience-container input,
+.post-experience-container textarea {
+  display: block;
+  width: 100%;
+  padding: 15px; /* Increased padding for comfort */
+  margin-bottom: 20px;
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 5px; /* Rounded corners for input fields */
+  font-size: 16px; /* Larger font size for readability */
+  transition: border-color 0.3s; /* Smooth border transition */
+}
+
+/* Focus effect for input fields */
+.post-experience-container input:focus,
+.post-experience-container textarea:focus {
+  border-color: #28a745; /* Change border color on focus */
+  outline: none; /* Remove outline */
+}
+
+/* Style for text area */
+.post-experience-container textarea {
+  height: 150px;
+}
+
+/* Style for select dropdowns */
+.post-experience-container select {
+  display: block; /* Ensure dropdowns are block elements */
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside the dropdown */
+  margin-bottom: 20px; /* Space below the dropdown */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #fff; /* Background color */
+  color: #333; /* Text color */
+  font-size: 16px; /* Font size */
+  appearance: none; /* Remove default arrow */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="6 9 12 15 18 9"/></svg>'); /* Custom arrow icon */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  background-position: right 10px center; /* Position the custom arrow */
+  background-size: 16px; /* Size of the custom arrow */
+}
+
+/* Style for select dropdowns on focus */
+.post-experience-container select:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove outline */
+}
+
+/* Style for disabled select dropdowns */
+.post-experience-container select:disabled {
+  background-color: #f1f1f1; /* Background for disabled state */
+  color: #a9a9a9; /* Text color for disabled state */
+}
+
+
+/* Button hover effect */
+.post-experience-btn:hover {
+  background-color: #FFC09F; /* Darken button on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Disabled button style */
+.post-experience-btn {
+  color: #fff;
+  background-color: #ff8f53; /* Gray background for disabled button */
+  
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px; /* Smaller font size for error messages */
+}
+
+/* Date picker input style */
+.date-picker {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Date picker container style */
+.date-picker-container {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for date picker */
+}
+
+/* Override header color of date picker */
+.react-datepicker__header {
+  background-color: #696969; /* Change to desired color */
+  color: #fff; /* Set header text color */
+}
+
+/* Selected date styling */
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background-color: #007bff; /* Change to desired selected day color */
+  color: #fff;
+}
+
+/* Hover effect for dates */
+.react-datepicker__day:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.back-button {
+  background-color: #ff8f53; /* Blue background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 15px; /* Padding for button */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.back-button:hover {
+  background-color: #FFC09F; /* Darker blue on hover */
+}

@@ -1,0 +1,110 @@
+/* Experiences Section */
+.experiences {
+  padding: 20px; /* Padding for the experiences container */
+  background-color: #f9f9f9; /* Light background for contrast */
+  position: relative; /* Added for better control of absolutely positioned elements */
+}
+
+.experience-list {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping to new lines */
+  justify-content: center; /* Center the experience cards */
+}
+
+.experience-card {
+  border: 1px solid #ddd; /* Light border for card outline */
+  border-radius: 8px; /* Rounded corners */
+  padding: 16px; /* Inner padding for card */
+  margin: 10px; /* Margin between cards */
+  max-width: 250px; /* Reduced max width of cards */
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animation for hover effects */
+}
+
+.experience-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.experience-card h2 {
+  font-size: 1.2em; /* Font size for experience title */
+  margin-bottom: 8px; /* Space below title */
+  color: #333; /* Darker color for visibility */
+}
+
+.experience-card img {
+  width: 100%; /* Full width for images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for images */
+  margin-top: 10px; /* Space above images */
+}
+
+.experience-card p {
+  font-size: 0.9em; /* Smaller font size for description */
+  color: #555; /* Slightly lighter text color */
+  margin: 10px 0; /* Margin for spacing */
+}
+
+.experience-card .price {
+  font-size: 1.1em; /* Slightly larger font for price */
+  color: #007bff; /* Blue color for price */
+  font-weight: bold; /* Bold for emphasis */
+}
+
+/* Parent container for filter sections */
+.filter-container {
+  display: flex; /* Flexbox for horizontal layout */
+  gap: 20px; /* Gap between filter sections */
+  align-items: center; /* Aligns items vertically */
+  margin-bottom: 20px;
+  justify-content: center; /* Center align within the container */
+}
+
+/* Filter Bar */
+.filter-bar {
+  display: flex;
+  gap: 5px;
+}
+
+.filter-bar select,
+.filter-bar input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+
+/* Filter Price */
+.filter-price {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.filter-price input[type="number"] {
+  width: 100px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+}
+
+
+/* Back Button */
+.back-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 8px 12px; /* Padding for better size */
+  background-color: #ff8f53; /* Blue background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Transition for background color */
+  z-index: 1; /* Ensure the button is on top */
+}
+
+.back-btn:hover {
+  background-color: #FFC09F; /* Darker blue on hover */
+}

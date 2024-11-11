@@ -1,0 +1,192 @@
+/* Set background color for the entire page */
+.signup-parent {
+  background: linear-gradient(to right, #fda343, #f9efe4);
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.login-parent {
+  background: linear-gradient(to right, #fda343, #f9efe4);
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Optional: add some padding to the main container */
+.header-container {
+  padding: 40px;
+}
+
+/* General Styles */
+.heading {
+  text-align: center;
+}
+
+/* Flex Container for Branding and Login Box */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Branding Section */
+.login-branding, .signup-branding {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center content vertically */
+  text-align: center; /* Center text */
+  padding: 20px;
+}
+
+/* Adjusted Branding Section */
+.login-branding h1{
+  font-size: 3em;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.5em; /* Adjusts spacing between words */
+}
+
+
+
+.tagline {
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 10px;
+}
+
+
+.line {
+  display: block;
+}
+
+/* Curved Divider */
+.branding-divider {
+  width: 2px;
+  height: 600px;
+  margin: 0 20px;
+  background: linear-gradient(to bottom, #ffffff, #ccc);
+  border-radius: 20px;
+}
+
+/* Login Box Styles */
+.login-box, .signup-box {
+  flex: 1;
+  text-align: center;
+}
+
+.login-container, .signup-container {
+  padding: 20px;
+}
+
+.login-container input, .signup-container input{
+  border-radius: 5px;
+  border-width: thin;
+}
+
+/* User and Host Toggle */
+.user-host-toggle {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.user-host-toggle button, .signup-toggle button {
+  width: 150px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+/* Login Method Toggle */
+.login-method-toggle {
+  margin-bottom: 20px;
+}
+
+.login-method-toggle button {
+  width: 150px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+/* Button Styles */
+button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: rgb(226, 226, 226);
+}
+
+.link-btn{
+  padding: 0;
+}
+
+button.active {
+  background-color: #fa952a;
+  color: white;
+}
+
+/* Input Styles */
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+}
+
+/* Submit Button */
+.submit-btn {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #161716;
+  color: white;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #474747;
+}
+
+/* Signup Link */
+.signup-link, .login-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.signup-link button, .login-link button {
+  background-color: transparent;
+  border: none;
+  color: blue;
+  cursor: pointer;
+}
+
+
+#animated-text {
+  font-size: 2em;
+  font-weight: bold;
+  color: #efefef;
+
+}
+
+#animated-icons {
+  margin: 0;
+  line-height: 1.5em;
+  font-size: 6em;
+  color: #efefef;
+
+}
+
+@keyframes fade {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
