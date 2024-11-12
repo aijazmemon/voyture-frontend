@@ -5,6 +5,7 @@ import axios from "axios";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import hotelBg from '../assets/hotel-bg.jpg';
+const apiBaseUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 import "./Hotels.css";
 
 const Hotels = () => {

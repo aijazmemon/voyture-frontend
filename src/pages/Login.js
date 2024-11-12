@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../App';
+const apiBaseUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 import './LoginSignup.css';
 
 const Login = () => {
