@@ -4,6 +4,7 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import axios from 'axios';
 import './BookingPage.css';
+
 const apiBaseUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 
 

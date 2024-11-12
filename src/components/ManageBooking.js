@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 import JsBarcode from 'jsbarcode';
-const apiBaseUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 import './ManageBooking.css';
+
+const apiBaseUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 
 const ManageBooking = () => {
   const [bookings, setBookings] = useState([]);

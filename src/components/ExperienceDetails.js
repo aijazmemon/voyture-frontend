@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
-const apiBaseUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 import './ExperienceDetails.css';
+
+
+const apiBaseUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 
 const ExperienceDetails = () => {
     const { experienceId } = useParams();

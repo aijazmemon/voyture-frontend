@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useMemo } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-const apiBaseUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 import DatePicker from "react-datepicker";
 //import "react-datepicker/dist/react-datepicker.css";
 import "./host.css";
+
+const apiBaseUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 
 const PostExperience = () => {
   const [formData, setFormData] = useState({
