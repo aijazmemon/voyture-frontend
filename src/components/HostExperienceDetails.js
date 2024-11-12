@@ -14,7 +14,7 @@ const HostExperienceDetails = () => {
     const fetchExperienceDetails = async () => {
       try {
         const authToken = localStorage.getItem('authToken');
-        const response = await axios.get(`http://localhost:5000/api/host-experience-details/${HostexperienceId}`, {
+        const response = await axios.get(`${apiBaseUrl}/api/host-experience-details/${HostexperienceId}`, {
             headers: { Authorization: `Bearer ${authToken}` },
           });
           
@@ -39,7 +39,7 @@ const HostExperienceDetails = () => {
   
     try {
       const authToken = localStorage.getItem('authToken');
-      await axios.delete(`http://localhost:5000/api/host-experience-details/${HostexperienceId}`, {
+      await axios.delete(`${apiBaseUrl}/api/host-experience-details/${HostexperienceId}`, {
         headers: { Authorization: `Bearer ${authToken}` },
       });
       navigate('/your-posted-experiences'); // Redirect back to experiences list

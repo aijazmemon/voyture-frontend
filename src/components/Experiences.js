@@ -20,7 +20,7 @@ const Experiences = () => {
   useEffect(() => {
     const fetchExperiences = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/experiences');
+        const response = await axios.get('${apiBaseUrl}/api/experiences');
         setExperiences(response.data);
       } catch (err) {
         setError('Failed to load experiences.');
@@ -135,7 +135,7 @@ const Experiences = () => {
             
             <div key={experience._id} className="experience-card" onClick={() => navigate(`/experiences/${experience._id}`)}>
             {experience.images && experience.images.length > 0 && (
-              <img src={`http://localhost:5000/${experience.images[0]}`} alt={experience.title} />
+              <img src={`${apiBaseUrl}/${experience.images[0]}`} alt={experience.title} />
             )}
             <h2>{experience.title}</h2>
             <p><strong>Country:</strong> {experience.country}</p>

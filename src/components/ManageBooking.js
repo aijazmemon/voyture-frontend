@@ -14,7 +14,7 @@ const ManageBooking = () => {
     const fetchBookings = async () => {
       try {
         const authToken = localStorage.getItem('authToken');
-        const response = await axios.get('http://localhost:5000/api/bookings', {
+        const response = await axios.get('${apiBaseUrl}/api/bookings', {
           headers: {
             Authorization: `Bearer ${authToken}`,
           },
@@ -41,7 +41,7 @@ const ManageBooking = () => {
     if (window.confirm('Are you sure you want to cancel this booking?')) {
       try {
         const authToken = localStorage.getItem('authToken');
-        await axios.delete(`http://localhost:5000/api/bookings/${bookingId}`, {
+        await axios.delete(`${apiBaseUrl}/api/bookings/${bookingId}`, {
           headers: {
             Authorization: `Bearer ${authToken}`,
           },

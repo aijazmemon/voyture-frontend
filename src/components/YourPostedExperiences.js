@@ -15,7 +15,7 @@ const YourPostedExperiences = () => {
         const token = localStorage.getItem('authToken');
         if (!token) throw new Error('No token found');
         
-        const response = await axios.get('http://localhost:5000/api/your-posted-experiences', {
+        const response = await axios.get(`${apiBaseUrl}/api/your-posted-experiences`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -61,7 +61,7 @@ const YourPostedExperiences = () => {
 
               return (
                 <div key={experience._id} className="experience-card" onClick={() => handleExperienceClick(experience._id)}>
-                  <img src={`http://localhost:5000/${imageUrl}`} alt={experience.title} />
+                  <img src={`${apiBaseUrl}/${imageUrl}`} alt={experience.title} />
                   <h2>{experience.title}</h2>
                   <p><strong>Location:</strong> {experience.state}, {experience.country}</p>
                   <p><strong>Price:</strong> ${experience.price}</p>

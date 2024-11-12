@@ -164,7 +164,7 @@ const PostExperience = () => {
       if (!token) throw new Error("No token found");
 
       await axios.post(
-        "http://localhost:5000/api/experiences",
+        `${apiBaseUrl}/api/experiences`,
         formDataToSend,
         {
           headers: {

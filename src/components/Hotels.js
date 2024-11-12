@@ -54,7 +54,7 @@ const Hotels = () => {
       const fetchedRegionId = await fetchRegionId(location);
       if (!fetchedRegionId) return;
 
-      const response = await axios.get("http://localhost:5000/api/search-hotels", {
+      const response = await axios.get(`${apiBaseUrl}/api/search-hotels`, {
         params: {
           regionId: fetchedRegionId,
           checkInDate: checkInDate.toISOString().split('T')[0],

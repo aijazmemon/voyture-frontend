@@ -39,7 +39,7 @@ const BookingPage = () => {
         setLoading(true);
         try {
             const response = await axios.post(
-                `http://localhost:5000/api/bookings`,
+                `${apiBaseUrl}/api/bookings`,
                 {
                     experienceId: experience._id,
                     guests,                   // Send guests

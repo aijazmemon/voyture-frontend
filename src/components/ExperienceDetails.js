@@ -14,7 +14,7 @@ const ExperienceDetails = () => {
         const fetchExperience = async () => {
             setLoading(true);
             try {
-                const response = await axios.get(`http://localhost:5000/api/experiences/${experienceId}`);
+                const response = await axios.get(`${apiBaseUrl}/api/experiences/${experienceId}`);
                 setExperience(response.data.experience);
             } catch (err) {
                 console.error("Error fetching experience details:", err);
@@ -52,7 +52,7 @@ const ExperienceDetails = () => {
                     {experience.images.map((image, index) => (
                         <img
                             key={index}
-                            src={`http://localhost:5000/${image}`}
+                            src={`${apiBaseUrl}/${image}`}
                             alt={`Experience ${index + 1}`}
                             className='experience-image'
                         />

@@ -65,7 +65,7 @@ const Signup = () => {
     setIsLoading(true);
     // Send signup API request to send OTP
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/signup', {
+      const response = await axios.post(`${apiBaseUrl}/api/auth/signup`, {
         fullName: formData.fullName,
         email: formData.email,
         phone: formData.phone,
@@ -108,7 +108,7 @@ const Signup = () => {
         formDataForHost.append('selfie', formData.selfie); // Append selfie file for hosts
       }
 
-      const response = await axios.post('http://localhost:5000/api/auth/verify-otp', formDataForHost);
+      const response = await axios.post(`${apiBaseUrl}/api/auth/verify-otp`, formDataForHost);
 
       // Handle successful OTP verification
       if (response.data.success) {
