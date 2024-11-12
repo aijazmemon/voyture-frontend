@@ -16,7 +16,7 @@ const ManageBooking = () => {
     const fetchBookings = async () => {
       try {
         const authToken = localStorage.getItem('authToken');
-        const response = await axios.get('${apiBaseUrl}/api/bookings', {
+        const response = await axios.get(`${apiBaseUrl}/api/bookings`, {
           headers: {
             Authorization: `Bearer ${authToken}`,
           },

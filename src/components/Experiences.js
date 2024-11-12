@@ -22,7 +22,7 @@ const Experiences = () => {
   useEffect(() => {
     const fetchExperiences = async () => {
       try {
-        const response = await axios.get('${apiBaseUrl}/api/experiences');
+        const response = await axios.get(`${apiBaseUrl}/api/experiences`);
         setExperiences(response.data);
       } catch (err) {
         setError('Failed to load experiences.');
